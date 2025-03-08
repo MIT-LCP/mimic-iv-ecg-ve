@@ -44,4 +44,4 @@ def Category_cnt(df):
 
 dx_cnt = Category_cnt(mimic_icd_df) 
 
-joblib.dump(dx_cnt,"/mnt/e/project/dataset/df/dx_cnt")
+joblib.dump(dx_cnt,"dataset/df/dx_cnt")

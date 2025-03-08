@@ -11,8 +11,6 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import make_scorer, recall_score, precision_score, fbeta_score, confusion_matrix
 
 
-
-# df_with_ve = joblib.load("dataset/df/test_with_ve_df")
 merge_df = joblib.load("dataset/df/annotation_df.jb")
 merge_df = merge_df.drop('filename',axis=1)
 merge_df = merge_df.rename(columns={'filename':'ecg_path', "af":"af_ai"})
